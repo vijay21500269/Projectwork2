@@ -1,58 +1,85 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+# INVENTORY SUPPLY OPTIMIZATION WITH DEMAND FORECASTING
 
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+# ABOUT
+By utilizing cutting-edge machine learning (ML) algorithms, predictive analytics, and external data integration, the project "Inventory Supply Optimization with Demand Forecasting" seeks to improve the inventory management system for B2C companies. The technology proactively controls stock levels by precisely predicting demand, lowering the possibility of stockouts and overstocking and eventually increasing supply chain effectiveness and customer satisfaction. To improve demand forecasts and inventory optimization, the project combines time-series forecasting, regression analysis, and collaborative filtering.
+# FEATURE
+### Time-Series Forecasting (STL Decomposition)
+Seasonal-Trend decomposition using Loess (STL) is employed to break down time-series data into its seasonal, trend, and residual components. This decomposition enables accurate demand forecasting by identifying underlying patterns in the data, such as seasonality, trends, and anomalies.
 
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+### Regression Analysis
+Regression models are used to analyze the impact of promotions, price changes, and other factors on demand. By evaluating how these variables affect sales, businesses can better understand demand fluctuations.
 
-## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+### Collaborative Filtering
+Collaborative filtering is used to identify product relationships based on customer behavior, recommending cross-category products that share similar characteristics. This improves product suggestions, catering to diverse customer preferences.
 
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
+### Recommendation System
+A hybrid recommendation system is implemented using both content-based and demographic filtering. Content-based filtering recommends products based on item attributes, while demographic filtering suggests products based on users' demographic profiles (age, location, etc.).
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+# REQUIREMENT
 
+### HARDWARE ENVIRONMENT
 
-## Output
+* Processor	: Pentium Dual Core 2.00GH
+* Hard disk	: 120 GB
+* RAM	    : 2GB (minimum)
+* Keyboard	: 110 keys enhanced
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+### SOFTWARE ENVIRONMENT
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+* Operating system	: Windows7 (with service pack 1), 8, 8.1 ,10 and 11
+* Language		    : Python 
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+# FLOW DIAGRAM 
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+The inventory optimization system collects data from Google Drive, processes it for quality, and conducts EDA to identify trends. It then uses Demographic and Collaborative Filtering for personalized recommendations. STL decomposition of sales data aids accurate demand forecasting, which is integrated into a Recommendation System to adjust inventory and suggest products. This system optimizes stock levels, reduces inefficiencies, and enhances supply chain efficiency, improving customer satisfaction.
+
+![OP](./Picture2(2).png)
 
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+# SYSTEM ARCHITECTURE
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+The inventory management system collects and processes data from internal sources and external APIs for accurate forecasting. The Forecasting Model predicts demand, which the Optimization Model uses for resource management and logistics. Data is stored in a central Database for easy access by the User Interface, Report Generator, and Feedback Loop. An Alert System ensures real-time updates, supported by APIs, file exchanges, and message queues. This cycle enhances decision-making and system performance.
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+
+![OP](./Picture1(2).png)
+
+# OUTPUT
+## EDA
+### Category Plot Snippet
+![op](./Picture3.png)
+### Sub-Category Plot Snippet
+![op](./Picture4.png)
+### Top Recommended Plot Snippet
+![op](./Picture5.png)
+### Demographic Filter Snippet
+![op](./Picture6.png)
+
+## First Recommender System (TF-IDF)
+![op](./PIC7.png)
+## Second Recommender System (CountVectorizer)
+![op](./PIC8.png)
+## Comparison between Recommender 1 and 2
+![op](./1.png)
+## STL Implementation
+![op](./2.png)
+
+# RESULT / IMPACT
+The project developed an advanced inventory management system that enhances demand prediction using time series analysis and cross-category correlation. This enables businesses to optimize inventory levels, reducing stockouts and overstocking. The intuitive user interface and adaptability, refined through real-time feedback, make it user-friendly and responsive to market changes. Key features such as machine learning integration and automated feedback loops improve decision-making, operational efficiency, and cost savings.
+
+Future enhancements include a web application for better accessibility, integration with ERP/CRM systems for seamless data exchange, advanced data visualizations for deeper insights, and AI-driven decision-making for automated recommendations. These improvements will further enhance the system’s accuracy, efficiency, and responsiveness, ensuring businesses remain competitive.
+# REFERENCES 
+
+P. S and P. D. S, "A Hybrid Demand Forecasting for Intermittent Demand Patterns using Machine Learning Techniques," 2022 1st International Conference on Computational Science and Technology (ICCST), CHENNAI, India, 2022.
+ 
+
+J. -j. Gao, Y. Zheng and X. Mao, "A joint decision model of dynamic pricing and dynamic inventory in an apparel supply chain with demand learning," 2010 International Conference on Logistics Systems and Intelligent Management (ICLSIM), Harbin, China, 2010.
+ 
+
+W. Wang, "An inventory optimization model based on BP neutral network," 2011 IEEE 2nd International Conference on Software Engineering and Service Science, Beijing, China, 2011.
+ 
+
+R. K. Meena and M. Rizwanullah, "An Optimization of Inventory Control in Supply Chain Under Time Varying Holding Costs with Exponential Demand Rate," 2024 3rd International Conference on Computational Modelling, Simulation and Optimization (ICCMSO), Phuket, Thailand, 2024.
+ 
 
 
 
