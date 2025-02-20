@@ -33,7 +33,7 @@ A hybrid recommendation system is implemented using both content-based and demog
 
 The inventory optimization system collects data from Google Drive, processes it for quality, and conducts EDA to identify trends. It then uses Demographic and Collaborative Filtering for personalized recommendations. STL decomposition of sales data aids accurate demand forecasting, which is integrated into a Recommendation System to adjust inventory and suggest products. This system optimizes stock levels, reduces inefficiencies, and enhances supply chain efficiency, improving customer satisfaction.
 
-![OP](./Picture2(2).png)
+![OP](./Picture2 (2).png)
 
 
 # SYSTEM ARCHITECTURE
@@ -41,7 +41,7 @@ The inventory optimization system collects data from Google Drive, processes it 
 The inventory management system collects and processes data from internal sources and external APIs for accurate forecasting. The Forecasting Model predicts demand, which the Optimization Model uses for resource management and logistics. Data is stored in a central Database for easy access by the User Interface, Report Generator, and Feedback Loop. An Alert System ensures real-time updates, supported by APIs, file exchanges, and message queues. This cycle enhances decision-making and system performance.
 
 
-![OP](./Picture1(2).png)
+![OP](./Picture1 (2).png)
 
 # OUTPUT
 ## EDA
